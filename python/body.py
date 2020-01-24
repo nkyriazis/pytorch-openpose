@@ -19,9 +19,8 @@ class Body(object):
         self.model.load_state_dict(model_dict)
         self.model.eval()
 
-    def __call__(self, oriImg):
+    def __call__(self, oriImg, scale_search=[0.5]):
         # scale_search = [0.5, 1.0, 1.5, 2.0]
-        scale_search = [0.5]
         boxsize = 368
         stride = 8
         padValue = 128
