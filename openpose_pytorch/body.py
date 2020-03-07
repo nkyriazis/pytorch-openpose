@@ -1,12 +1,12 @@
 import cv2
 import numpy as np
-import util
+import openpose_pytorch.util as util
 import math
 import time
 from scipy.ndimage.filters import gaussian_filter
 import matplotlib.pyplot as plt
 import matplotlib
-from model import bodypose_model
+from openpose_pytorch.model import bodypose_model
 import torch
 from torchvision import transforms
 
